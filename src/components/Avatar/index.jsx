@@ -1,0 +1,23 @@
+import React from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
+import Img from 'gatsby-image';
+
+const Avatar = () => {
+    const { avatarImage } = useStaticQuery(
+        graphql`
+            query {
+                avatarImage: file(relativePath: { eq: "profile-pic.png"}) {
+                    childImageSharp {
+                        fluid(maxWidth: 60, maxHeight: 60) {
+                            ...GatsbyImageSharpFluid_tracedSVG
+                        }
+                    }
+                }
+            }
+        `
+    )
+
+    return <Img fixed={avatarImage.childImageSharp.fixed} />
+}
+
+export default Avatar
