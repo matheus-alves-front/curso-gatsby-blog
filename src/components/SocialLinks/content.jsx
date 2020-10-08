@@ -1,4 +1,4 @@
-const Links = [
+const links = [
     {
         label: 'Instagram',
         url: 'https://www.instagram.com/maththugalves/'
