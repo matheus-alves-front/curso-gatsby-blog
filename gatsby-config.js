@@ -1,10 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: `John Doe`,
-    position: `Backend Developer`,
-    description: `A blog about backend development and other cool stuff.`,
-    author: `@myblog`,
-    siteUrl: `https://johndoe.com.br`,
+    title: `Matheus Alves`,
+    position: `Front-End Developer`,
+    description: `A blog about front-end development and other cool stuff.`,
+    author: `@maththugalves`,
+    siteUrl: `https://matheusalves.com.br`,
   },
   plugins: [
     `gatsby-plugin-transition-link`,
